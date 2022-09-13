@@ -1,0 +1,85 @@
+$border-radius:16px;
+@media only screen and (max-width: 600px) {
+  .button{
+    flex-direction: column-reverse;
+    #new-quote{
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.App {
+  text-align: center; 
+  
+  #quote-box{
+    box-shadow: 30px 10px 90px  rgb(95, 255, 0),-30px -10px 90px  rgb(95, 255, 0);
+    padding: 25px;
+    background: linear-gradient(180deg, #5fff00, #010309, #5fff00);
+    border-radius: 90px;
+    border: 1px solid #010309;
+    color: rgb(95, 255, 0);
+    text-shadow : 1px 1px 2px rgb( 158 , 167 , 124 ), 0 0 1em rgb(77, 255, 0),
+  0 0 0.2em rgb(34, 38, 29);
+  
+    #text{
+      margin-bottom: 0px;
+      font-family: 'VT323', monospace;
+      #quote-icon{
+        margin-right: 10px;
+      }
+    }
+    #author{
+      margin-top: 0;
+      text-align: end;
+    }
+    .button{
+      display: flex;
+      justify-content: space-between;
+      min-height: 50px;
+    #tweet-quote,
+    #tumblr-quote{
+      display: flex;
+      padding: 10px;
+      color: black;
+      border-radius: $border-radius;
+      max-height: 50px;
+      height: 100%;
+      bottom: 10px;
+    }
+    #tweet-quote:hover{
+      filter: drop-shadow(11px 15px 2px #0c3c7f)
+    }
+    #tumblr-quote:hover{
+      filter: drop-shadow(11px 13px 2px #990000)
+    }
+  }
+    #new-quote{
+      display: inline-block;
+      color: #5fff00;
+      border-radius: 10px;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      background: linear-gradient(180deg, #5fff00, #010309, #5fff00);
+    }
+    #new-quote:hover{
+      filter: drop-shadow(11px 13px 2px #000000);
+      background: linear-gradient(180deg, #010309, #5fff00, #010309);
+      color: black;
+    }
+  }
+
+  .App-header {
+    background-color: #010309;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(15px + 2vmin);
+    color: white;
+  } 
+}
+
+

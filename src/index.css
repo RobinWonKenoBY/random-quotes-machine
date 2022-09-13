@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Dancing Script, cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#firma{
+  display: inline;
+  color: #5fff00;
+  width: 100px;
+  height: 20px;
+  position: fixed;
+  font-family: 'Cinzel', serif;
+  font-size: .57em;
+  right: 33vw;
+  bottom: 1vh;
+}
